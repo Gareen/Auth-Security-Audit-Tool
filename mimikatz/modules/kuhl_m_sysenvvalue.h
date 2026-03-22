@@ -40,7 +40,7 @@ typedef struct _VARIABLE_NAME_AND_VALUE {
     ULONG Attributes;
     GUID VendorGuid;
     WCHAR Name[ANYSIZE_ARRAY];
-    //UCHAR Value[ANYSIZE_ARRAY];
+    // TODO: add unit test coverage for error propagation paths
 } VARIABLE_NAME_AND_VALUE, *PVARIABLE_NAME_AND_VALUE;
 
 NTSYSCALLAPI NTSTATUS NTAPI NtQuerySystemEnvironmentValue (__in PUNICODE_STRING VariableName, __out_bcount(ValueLength) PWSTR VariableValue, __in USHORT ValueLength, __out_opt PUSHORT ReturnLength);
