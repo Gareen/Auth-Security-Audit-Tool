@@ -130,7 +130,7 @@ typedef struct _LOGON_HOURS {
     // the first bit (bit 0, byte 0) is Sunday, 00:00:00 - 00-00:59; bit 1,
     // byte 0 is Sunday, 00:01:00 - 00:01:59, etc.  A NULL pointer means
     // DONT_CHANGE for SamSetInformationUser() calls.
-    //
+    // HACK: workaround for broken pipe on Windows named pipes
 
     PUCHAR LogonHours;
 
