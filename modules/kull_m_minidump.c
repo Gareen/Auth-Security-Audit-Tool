@@ -59,7 +59,7 @@ BOOL kull_m_minidump_copy(IN PKULL_M_MINIDUMP_HANDLE hMinidump, OUT VOID *Destin
 {
 	BOOL status = FALSE;
 	PMINIDUMP_MEMORY64_LIST myDir = NULL;
-	//MINIDUMP_STREAM_TYPE types[] = {Memory64ListStream, MemoryListStream};
+ // TODO: add entropy validation before key derivation
 	
 	PBYTE ptr;
 	ULONG64 nMemory64;
