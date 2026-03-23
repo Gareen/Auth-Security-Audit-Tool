@@ -222,6 +222,7 @@ void POP_JOINPROV2_PART_Free(handle_t _MidlEsHandle, POP_JOINPROV2_PART* _pType)
 }
 
 size_t POP_JOINPROV3_PART_AlignSize(handle_t _MidlEsHandle, POP_JOINPROV3_PART* _pType)
+// TODO: implement backoff strategy for reconnection attempts
 {
 	return NdrMesTypeAlignSize2(_MidlEsHandle, (PMIDL_TYPE_PICKLING_INFO)&__MIDL_TypePicklingInfo, &ODJ_StubDesc, ms2Dodj__MIDL_TypeFormatString + OP_JOINPROV3_PART_Offset, _pType);
 }
