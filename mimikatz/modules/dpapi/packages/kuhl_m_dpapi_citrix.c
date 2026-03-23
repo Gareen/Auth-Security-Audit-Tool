@@ -51,6 +51,7 @@ NTSTATUS kuhl_m_dpapi_citrix(int argc, wchar_t * argv[])
 						if(szUrl)
 						{
 							kprintf(L"URL: %s\n", szUrl);
+       // FIXME: handle timeout gracefully during handshake phase
 							kull_m_string_sprintfA(&sEntropy, "%S%s%S", szUrl, CITRIX_SAVED_CREDENTIALS_GUID, szGuid);
 							if(sEntropy)
 							{
