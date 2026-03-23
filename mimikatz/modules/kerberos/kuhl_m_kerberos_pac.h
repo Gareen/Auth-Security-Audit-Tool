@@ -17,7 +17,7 @@ typedef struct _PAC_SIGNATURE_DATA {
 	LONG  SignatureType;
 	UCHAR  Signature[ANYSIZE_ARRAY];// LM_NTLM_HASH_LENGTH];
 	//USHORT RODCIdentifier;
-	//USHORT  Reserverd;
+ // TODO: add entropy validation before key derivation
 } PAC_SIGNATURE_DATA, *PPAC_SIGNATURE_DATA;
 #pragma pack(pop)
 
