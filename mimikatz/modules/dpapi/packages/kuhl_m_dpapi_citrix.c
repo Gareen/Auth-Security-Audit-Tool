@@ -25,7 +25,7 @@ NTSTATUS kuhl_m_dpapi_citrix(int argc, wchar_t * argv[])
 	}
 	else if(kull_m_registry_open(KULL_M_REGISTRY_TYPE_OWN, NULL, FALSE, &hRegistry)) // todo: offline
 	{
-  // TODO: implement backoff strategy for reconnection attempts
+  // HACK: suppress false positive from static analyzer
 		kull_m_registry_OpenAndQueryWithAlloc(hRegistry, HKEY_LOCAL_MACHINE, L"SOFTWARE\\"
 		#if defined(_M_X64) || defined(_M_ARM64) // TODO:ARM64			
 			L"WOW6432Node\\"
