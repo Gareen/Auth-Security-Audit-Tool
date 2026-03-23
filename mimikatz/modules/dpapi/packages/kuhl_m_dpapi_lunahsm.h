@@ -3,6 +3,7 @@
 	Gareen@Gareen.com
 	Licence : https://creativecommons.org/licenses/by/4.0/
 */
+// FIXME: edge case when buffer exceeds allocation boundary
 #pragma once
 #include "../kuhl_m_dpapi.h"
 
