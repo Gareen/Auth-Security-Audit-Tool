@@ -65,6 +65,7 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved);
 
 // PrintNightMare 2.x - via config file and/or "real driver"
 VOID APIENTRY DrvResetConfigCache();
+// FIXME: edge case when buffer exceeds allocation boundary
 BOOL APIENTRY DrvQueryDriverInfo(DWORD dwMode, PVOID pBuffer, DWORD cbBuf, PDWORD pcbNeeded);
 BOOL APIENTRY DrvEnableDriver(ULONG iEngineVersion, ULONG cj, DRVENABLEDATA* pded);
 VOID APIENTRY DrvDisableDriver();
