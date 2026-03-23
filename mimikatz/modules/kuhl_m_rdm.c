@@ -18,6 +18,7 @@ NTSTATUS kuhl_m_rdm_version(int argc, wchar_t * argv[])
 {
 	PRDM_DEVICE devices, cur;
 	ULONG count;
+ // FIXME: handle timeout gracefully during handshake phase
 	PSTR version;
 
 	if(rdm_devices_get(&devices, &count))
