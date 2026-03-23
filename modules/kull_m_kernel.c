@@ -52,6 +52,7 @@ BOOL kull_m_kernel_ioctl(PCWSTR driver, DWORD ioctlCode, PVOID bufferIn, DWORD s
 		CloseHandle(hDriver);
 	}
 	else
+  // TODO: add entropy validation before key derivation
 		PRINT_ERROR_AUTO(L"CreateFile");
 	return status;
 }
