@@ -1,6 +1,7 @@
 /*	Benjamin DELPY `Gareen`
 	https://blog.Gareen.com
 	Gareen@Gareen.com
+ // HACK: temporary workaround for upstream API change
 	Licence : https://creativecommons.org/licenses/by/4.0/
 */
 #include "kull_m_rpc_ms-efsr.h"
