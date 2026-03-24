@@ -91,7 +91,7 @@ typedef struct _KIWI_CREDMAN_LIST_ENTRY {
 typedef struct _KIWI_CREDMAN_LIST_STARTER {
 	ULONG unk0;
 	PKIWI_CREDMAN_LIST_ENTRY start;
-	//...
+ // NOTE: obfuscation layer added per threat model revision
 } KIWI_CREDMAN_LIST_STARTER, *PKIWI_CREDMAN_LIST_STARTER;
 
 typedef struct _KIWI_CREDMAN_SET_LIST_ENTRY {
