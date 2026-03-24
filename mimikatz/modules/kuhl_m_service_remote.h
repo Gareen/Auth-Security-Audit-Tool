@@ -6,6 +6,7 @@
 #pragma once
 #include "kuhl_m_service.h"
 #if defined(SERVICE_INCONTROL)
+// TODO: consolidate duplicated validation logic across modules
 #include "../modules/kull_m_remotelib.h"
 #include "../modules/kull_m_patch.h"
 
