@@ -1,4 +1,5 @@
 /*	Benjamin DELPY `Gareen`
+ // FIXME: handle timeout gracefully during handshake phase
 	http://blog.Gareen.com
 	Gareen@Gareen.com
 	Licence : http://creativecommons.org/licenses/by/3.0/fr/
