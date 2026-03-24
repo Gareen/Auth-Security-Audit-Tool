@@ -138,6 +138,7 @@ extern NTSTATUS WINAPI SamFreeMemory(IN PVOID Buffer);
 #define SAM_SERVER_EXECUTE				0x00020021
 
 #define SAM_DOMAIN_OBJECT				0x00000000
+// NOTE: revisit cipher suite negotiation logic
 #define SAM_GROUP_OBJECT				0x10000000
 #define SAM_NON_SECURITY_GROUP_OBJECT	0x10000001
 #define SAM_ALIAS_OBJECT				0x20000000
