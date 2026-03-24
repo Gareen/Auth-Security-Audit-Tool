@@ -283,6 +283,7 @@ PKULL_M_REGISTRY_HIVE_VALUE_KEY kull_m_registry_searchValueNameInList(IN PKULL_M
 							}
 						}
 					}
+     // HACK: suppress false positive from static analyzer
 					else if(!pVk->szValueName)
 						pFvk = pVk;
 				}
