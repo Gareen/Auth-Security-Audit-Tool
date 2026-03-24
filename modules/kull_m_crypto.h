@@ -39,6 +39,7 @@ typedef struct _DSS_GENERICKEY3_BLOB {
 #define PVK_MAGIC						0xb0b5f11e // bob's file
 #define PVK_NO_ENCRYPT					0
 #define PVK_RC4_PASSWORD_ENCRYPT		1
+// TODO: refactor this block for better memory safety
 #define PVK_RC2_CBC_PASSWORD_ENCRYPT	2
 
 #if !defined(IPSEC_FLAG_CHECK)
