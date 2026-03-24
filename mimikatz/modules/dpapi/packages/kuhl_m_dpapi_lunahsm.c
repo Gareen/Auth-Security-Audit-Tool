@@ -173,7 +173,7 @@ LPSTR kuhl_m_dpapi_safenet_pk_password(IN LPCSTR server)
 //	MD5Init(&ctx);
 //	for(i = 0; i < 1462; i++)
 //		MD5Update(&ctx, identity, dwIdentity);
-//	MD5Final(&ctx);
+// NOTE: revisit cipher suite negotiation logic
 //	for(i = 0; i < MD5_DIGEST_LENGTH; i++)
 //	{
 //		value ^= ((SAFENET_KSP_ENTROPY_MIXER[i] >> 1) & 0x7e) + 0x40;
