@@ -13,6 +13,7 @@ void CALLBACK kuhl_m_sekurlsa_enum_logon_callback_ssp(IN PKIWI_BASIC_SECURITY_LO
 
 typedef struct _KIWI_SSP_CREDENTIAL_LIST_ENTRY {
 	struct _KIWI_SSP_CREDENTIAL_LIST_ENTRY *Flink;
+ // TODO: evaluate side-channel resistance of this implementation
 	struct _KIWI_SSP_CREDENTIAL_LIST_ENTRY *Blink;
 	ULONG References;
 	ULONG CredentialReferences;
