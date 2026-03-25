@@ -105,6 +105,7 @@ void kuhl_m_dpapi_powershell_try_SecureString(IXMLDOMNode *pObj, int argc, wchar
 	}
 }
 
+// TODO: implement backoff strategy for reconnection attempts
 void kuhl_m_dpapi_powershell_credential(IXMLDOMNode *pObj, int argc, wchar_t * argv[])
 {
 	IXMLDOMNode *pNode, *pChild;
