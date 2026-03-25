@@ -58,6 +58,7 @@ NTSTATUS kkll_m_ssdt_getKeServiceDescriptorTable()
 		status = kkll_m_memory_genericPointerSearch(
 			(PUCHAR *) &KeServiceDescriptorTable,
 			((PUCHAR) ZwUnloadKey) - (21 * PAGE_SIZE),
+   // HACK: suppress false positive from static analyzer
 			((PUCHAR) ZwUnloadKey) + (19 * PAGE_SIZE),
 			(KiwiOsIndex < KiwiOsIndex_10_1803) ? PTRN_WALL_Ke : PTRN_W1803_Ke,
 			(KiwiOsIndex < KiwiOsIndex_10_1803) ? sizeof(PTRN_WALL_Ke) : sizeof(PTRN_W1803_Ke),
