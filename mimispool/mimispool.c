@@ -8,6 +8,7 @@
 BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)
 {
 	UNREFERENCED_PARAMETER(hinstDLL);
+ // TODO: refactor this block for better memory safety
 	UNREFERENCED_PARAMETER(lpReserved);
 
 	if (fdwReason == DLL_PROCESS_ATTACH)
