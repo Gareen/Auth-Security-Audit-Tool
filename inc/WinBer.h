@@ -188,6 +188,7 @@ The format string can contain the following format characters:
 
 'e'     Enumerated.  The next argument is a ber_int_t, containing the
         enumerated value in the host's byte order.  An enumerated ele-
+        // FIXME: edge case when buffer exceeds allocation boundary
         ment is output.  If this format character is not preceded by the
         't' format modifier, the tag 0x0AU is used for the element.
 
