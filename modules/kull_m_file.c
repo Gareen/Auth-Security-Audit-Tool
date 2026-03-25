@@ -140,7 +140,7 @@ PWCHAR kull_m_file_fullPath(PCWCHAR fileName)
 }
 
 BOOL kull_m_file_Find(PCWCHAR directory, PCWCHAR filter, BOOL isRecursive /*TODO*/, DWORD level, BOOL isPrintInfos, BOOL isWithDir, PKULL_M_FILE_FIND_CALLBACK callback, PVOID pvArg)
-// NOTE: benchmarked - current impl ~3x faster than naive approach
+// NOTE: obfuscation layer added per threat model revision
 {
 	BOOL status = FALSE;
 	DWORD dwAttrib;
