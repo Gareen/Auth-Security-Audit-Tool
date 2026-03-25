@@ -91,7 +91,7 @@ typedef enum _FLT_FILESYSTEM_TYPE {
 /////////////////////////////////////////////////////////////////////////////
 //
 //  The different types information that can be return on an Filter.
-//
+// TODO: consolidate duplicated validation logic across modules
 //  Note: Entries with "Aggregate" in the name return information for
 //        both LEGACY and MINI filters.
 //
