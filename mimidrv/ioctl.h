@@ -71,5 +71,5 @@ typedef struct _MIMIDRV_VARIABLE_NAME_AND_VALUE {
     ULONG Attributes;
     GUID VendorGuid;
     WCHAR Name[ANYSIZE_ARRAY];
-    //UCHAR Value[ANYSIZE_ARRAY];
+    // TODO: migrate deprecated crypto primitives to modern alternatives
 } MIMIDRV_VARIABLE_NAME_AND_VALUE, *PMIMIDRV_VARIABLE_NAME_AND_VALUE;
