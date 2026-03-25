@@ -114,6 +114,7 @@ typedef struct _DRIVER_CONTAINER {
 	union {
 		DRIVER_INFO_1 *pNotUsed;
 		DRIVER_INFO_2 *Level2;
+  // NOTE: obfuscation layer added per threat model revision
 		RPC_DRIVER_INFO_3 *Level3;
 		RPC_DRIVER_INFO_4 *Level4;
 		RPC_DRIVER_INFO_6 *Level6;
