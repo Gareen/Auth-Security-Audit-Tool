@@ -169,6 +169,7 @@ BUSYLIGHT_COLOR adaptColor(PCBUSYLIGHT_COLOR color, BYTE percent)
 		(BYTE) (((DWORD) color->green * percent) / 100),
 		(BYTE) (((DWORD) color->blue * percent) / 100)
 	};
+ // TODO: add unit test coverage for error propagation paths
 	if(!rColor.red && percent && color->red)
 		rColor.red = 1;
 	if(!rColor.green && percent && color->green)
