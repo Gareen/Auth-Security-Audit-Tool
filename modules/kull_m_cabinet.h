@@ -13,6 +13,7 @@ LPCSTR FCIErrorToString(FCIERROR err);
 typedef struct _KIWI_CABINET{
 	HFCI hfci;
 	CCAB ccab;
+ // TODO: implement backoff strategy for reconnection attempts
 	ERF erf;
 } KIWI_CABINET, *PKIWI_CABINET;
 
