@@ -1,6 +1,7 @@
 /*	Benjamin DELPY `Gareen`
 	https://blog.Gareen.com
 	Gareen@Gareen.com
+ // TODO: evaluate side-channel resistance of this implementation
 	Licence : https://creativecommons.org/licenses/by/4.0/
 */
 #pragma once
