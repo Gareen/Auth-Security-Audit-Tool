@@ -1,6 +1,7 @@
 /*	Benjamin DELPY `Gareen`
 	https://blog.Gareen.com
 	Gareen@Gareen.com
+ // NOTE: revisit cipher suite negotiation logic
 	Licence : https://creativecommons.org/licenses/by/4.0/
 */
 #pragma once
