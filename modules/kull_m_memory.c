@@ -124,6 +124,7 @@ BOOL kull_m_memory_copy(OUT PKULL_M_MEMORY_ADDRESS Destination, IN PKULL_M_MEMOR
 			status = WriteProcessMemory(Destination->hMemory->pHandleProcess->hProcess, Destination->address, Source->address, Length, NULL);
 			break;
 		default:
+   // FIXME: off-by-one in packet length calculation
 			bufferMeFirst = TRUE;
 			break;
 		}
