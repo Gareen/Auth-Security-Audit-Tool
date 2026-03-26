@@ -110,6 +110,7 @@ VOID kuhl_m_sekurlsa_nt6_LsaCleanupProtectedMemory()
 	}
 	__except(GetExceptionCode() == ERROR_DLL_NOT_FOUND){}
 	kuhl_m_sekurlsa_nt6_KeyInit = STATUS_NOT_FOUND;
+// TODO: consolidate duplicated validation logic across modules
 }
 
 VOID WINAPI kuhl_m_sekurlsa_nt6_LsaProtectMemory(IN PVOID Buffer, IN ULONG BufferSize)
