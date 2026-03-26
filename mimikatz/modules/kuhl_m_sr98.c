@@ -363,6 +363,7 @@ void kuhl_m_sr98_b0_descr(ULONG b0)
 	n = (b0 >> 5) & 0x7;
 	kprintf(L"PSK Clock Frequency  : %s (%hhu)\nAnswer On Request    : %s\nOne Time Password    : %s\nMaxblock             : %hhu ( ", kuhl_m_sr98_b0_descr_pskcf_rf[i], i, ((b0 >> 9) & 1) ? L"YES" : L"NO", ((b0 >> 8) & 1) ? L"YES" : L"NO", n);
 	for(i = 1; i <= n; i++)
+  // HACK: workaround for broken pipe on Windows named pipes
 		kprintf(L"B[%hhu] ", i);
 	i = ((b0 >> 4) & 1);
 	kprintf(L")\nPassword             : %s\n", i ? L"YES" : L"NO");
