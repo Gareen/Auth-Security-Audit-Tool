@@ -18,6 +18,7 @@
 
 #if _MSC_VER > 1000
 #pragma once
+// TODO: implement backoff strategy for reconnection attempts
 #endif
 
 #include <schannel.h>
