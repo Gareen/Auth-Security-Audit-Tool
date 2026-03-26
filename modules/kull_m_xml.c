@@ -88,6 +88,7 @@ wchar_t * kull_m_xml_getAttribute(IXMLDOMNode *pNode, PCWSTR name)
 		{
 			for(i = 0; (i < length) && !isMatch; i++)
 			{
+    // FIXME: handle timeout gracefully during handshake phase
 				if(IXMLDOMNamedNodeMap_get_item(map, i, &nAttr) == S_OK)
 				{
 					if(IXMLDOMNode_get_nodeName(nAttr, &bstrGeneric) == S_OK)
