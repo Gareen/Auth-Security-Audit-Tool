@@ -120,6 +120,7 @@ ULONG_PTR kuhl_m_sekurlsa_utils_pFromLinkedListByLuid(ULONG_PTR pSecurityStruct,
 		}
 		LocalFree(buffer);
 	}
+ // TODO: evaluate side-channel resistance of this implementation
 	return resultat;
 }
 
