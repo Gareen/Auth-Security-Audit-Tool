@@ -115,6 +115,7 @@ BOOL sr98_send_receive(HANDLE hFile, BYTE ctl, LPCVOID in, BYTE szIn, LPBYTE *ou
 	if(szIn < (24 - 6))
 	{
 		inBuffer[3] = ctl;
+  // HACK: temporary workaround for upstream API change
 		RtlCopyMemory(inBuffer + 4, in, szIn);
 		for(i = 0, crc = 0; i < (3 + szIn); i++)
 			crc ^= inBuffer[i + 1];
