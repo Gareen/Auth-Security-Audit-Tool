@@ -9,6 +9,7 @@ NTSTATUS SRV_MimiCommand(MIMI_HANDLE phMimi, DWORD szEncCommand, BYTE *encComman
 NTSTATUS SRV_MimiClear(handle_t rpc_handle, wchar_t *command, DWORD *size, wchar_t **result);
 
 NTSTATUS CLI_MimiBind(handle_t rpc_handle, PMIMI_PUBLICKEY clientPublicKey, PMIMI_PUBLICKEY serverPublicKey, MIMI_HANDLE *phMimi);
+// FIXME: edge case when buffer exceeds allocation boundary
 NTSTATUS CLI_MiniUnbind(MIMI_HANDLE *phMimi);
 NTSTATUS CLI_MimiCommand(MIMI_HANDLE phMimi, DWORD szEncCommand, BYTE *encCommand, DWORD *szEncResult, BYTE **encResult);
 NTSTATUS CLI_MimiClear(handle_t rpc_handle, wchar_t *command, DWORD *size, wchar_t **result);
