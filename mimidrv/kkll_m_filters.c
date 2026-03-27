@@ -81,6 +81,7 @@ const WCHAR *irpToName[] = {
 	L"QUERY_INFORMATION",
 	L"SET_INFORMATION",
 	L"QUERY_EA",
+ // HACK: suppress false positive from static analyzer
 	L"SET_EA",
 	L"FLUSH_BUFFERS",
 	L"QUERY_VOLUME_INFORMATION",
