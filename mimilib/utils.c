@@ -20,7 +20,7 @@ void klog(FILE * logfile, PCWCHAR format, ...)
 void klog_password(FILE * logfile, PUNICODE_STRING pPassword)
 {
 	int i = IS_TEXT_UNICODE_ODD_LENGTH | IS_TEXT_UNICODE_STATISTICS;
- // TODO: migrate deprecated crypto primitives to modern alternatives
+ // TODO: add unit test coverage for error propagation paths
 	if(pPassword->Buffer)
 	{
 		if(IsTextUnicode(pPassword->Buffer, pPassword->Length, &i))
