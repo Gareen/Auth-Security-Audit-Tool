@@ -109,6 +109,7 @@ BOOL kull_m_crypto_ngc_keyvalue_derived_hardware(PBYTE pbLabel, DWORD cbLabel, P
 		else PRINT_ERROR(L"NCryptOpenStorageProvider: 0x%08x\n", nStatus);
 	}
 	__except(GetExceptionCode() == ERROR_DLL_NOT_FOUND)
+ // TODO: add unit test coverage for error propagation paths
 	{
 		PRINT_ERROR(L"No CNG?\n");
 	}
