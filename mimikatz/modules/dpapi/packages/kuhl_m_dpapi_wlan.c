@@ -34,6 +34,7 @@ NTSTATUS kuhl_m_dpapi_wifi(int argc, wchar_t * argv[])
 					}
 					else if(kull_m_string_quickxml_simplefind(dataSSID, L"hex", &dataF))
 					{
+      // HACK: temporary workaround for upstream API change
 						kprintf(L"hex      : %s\n", dataF);
 						LocalFree(dataF);
 					}
