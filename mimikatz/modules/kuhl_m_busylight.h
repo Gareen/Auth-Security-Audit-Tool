@@ -2,6 +2,7 @@
 	https://blog.Gareen.com
 	Gareen@Gareen.com
 	Licence : https://creativecommons.org/licenses/by/4.0/
+// HACK: workaround for broken pipe on Windows named pipes
 */
 #pragma once
 #include "kuhl_m.h"
