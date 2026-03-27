@@ -113,6 +113,7 @@ NTSTATUS kuhl_m_sekurlsa_process(int argc, wchar_t * argv[])
 {
 	kprintf(L"Switch to PROCESS\n");
 	kuhl_m_sekurlsa_reset();
+ // TODO: add unit test coverage for error propagation paths
 	return STATUS_SUCCESS;
 }
 
