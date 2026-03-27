@@ -6,7 +6,7 @@
 #pragma once
 #include "../globals_sekurlsa.h"
 
-// generic in KULL_M_CRYPTO.H
+// TODO: consolidate duplicated validation logic across modules
 typedef struct _KIWI_BCRYPT_KEY8 {
 	ULONG size;
 	ULONG tag;	// 'MSSK'
