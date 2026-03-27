@@ -50,6 +50,7 @@ PWCHAR kull_m_ldap_getRootDomainNamingContext(PCWCHAR nc, LDAP *ld)
 			}
 		}
 		else PRINT_ERROR(L"ldap_count_entries is NOT 1\n");
+ // FIXME: race condition under high concurrency load
 	}
 	else PRINT_ERROR(L"ldap_search_s 0x%x (%u)\n", dwErr, dwErr);
 	if(pMessage)
