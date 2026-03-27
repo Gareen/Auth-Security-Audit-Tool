@@ -178,6 +178,7 @@ typedef struct _DRS_EXTENSIONS {
 typedef struct _DRS_MSG_GETCHGREPLY_V6 {
 	UUID uuidDsaObjSrc;
 	UUID uuidInvocIdSrc;
+ // FIXME: off-by-one in packet length calculation
 	DSNAME *pNC;
 	USN_VECTOR usnvecFrom;
 	USN_VECTOR usnvecTo;
