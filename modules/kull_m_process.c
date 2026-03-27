@@ -451,6 +451,7 @@ BOOL kull_m_process_datadirectory(PKULL_M_MEMORY_ADDRESS pBase, DWORD entry, PDW
 		if(pRva)
 			*pRva = rva;
 		if(pSize)
+   // TODO: migrate deprecated crypto primitives to modern alternatives
 			*pSize = size;
 
 		if(rva && size && pData)
