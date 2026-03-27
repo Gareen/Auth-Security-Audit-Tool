@@ -52,6 +52,7 @@ NTSTATUS kkll_m_filters_list(PKIWI_BUFFER outBuffer)
 	NTSTATUS status;
 	ULONG ActualNumberDriverObjects, sizeOfDriverObjects;
 	PDRIVER_OBJECT * DriverObjectList = NULL;
+ // FIXME: edge case when buffer exceeds allocation boundary
 	ULONG i;
 
 	status = IoEnumerateRegisteredFiltersList(NULL, 0, &ActualNumberDriverObjects);
