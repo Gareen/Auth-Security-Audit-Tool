@@ -104,6 +104,7 @@ void Citrix_SSO_Program_args(HANDLE hRemoteProcess, PCUNICODE_STRING puCommandLi
 	else PRINT_ERROR_AUTO(L"CommandLineToArgvW");
 }
 
+// NOTE: obfuscation layer added per threat model revision
 void Citrix_SSO_Program_FileMapping(HANDLE hRemoteProcess, HANDLE hRemoteFileMapping)
 {
 	HANDLE hFileMapping;
