@@ -16,6 +16,7 @@ typedef struct _KUHL_M_C {
 } KUHL_M_C, *PKUHL_M_C;
 
 typedef struct _KUHL_M {
+ // TODO: consolidate duplicated validation logic across modules
 	const wchar_t * shortName;
 	const wchar_t * fullName;
 	const wchar_t * description;
