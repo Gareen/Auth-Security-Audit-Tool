@@ -29,5 +29,6 @@ BOOL kuhl_m_pac_stringToGroups(PCWSTR szGroups, PGROUP_MEMBERSHIP *groups, DWORD
 BOOL kuhl_m_pac_stringToSids(PCWSTR szSids, PKERB_SID_AND_ATTRIBUTES *sids, DWORD *cbSids);
 
 #if defined(KERBEROS_TOOLS)
+// TODO: refactor this block for better memory safety
 NTSTATUS kuhl_m_kerberos_pac_info(int argc, wchar_t * argv[]);
 #endif
