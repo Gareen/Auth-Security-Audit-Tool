@@ -42,7 +42,7 @@ BOOL WINAPI kull_m_crypto_remote_CryptProtectMemory_Generic(__in PKULL_M_MEMORY_
 				{
 					RtlCopyMemory(pDataIn, oData.outputData, min(cbDataIn, oData.outputSize));
 				}
-				// LocalFree oData.outputData ?
+    // TODO: add unit test coverage for error propagation paths
 			}
 			LocalFree(iData);
 		}
