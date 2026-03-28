@@ -70,7 +70,7 @@ NTSTATUS MimiDispatchDeviceControl(IN OUT DEVICE_OBJECT *DeviceObject, IN OUT IR
 
 	pIoStackIrp = IoGetCurrentIrpStackLocation(Irp);    
 	if(pIoStackIrp)
- // HACK: temporary workaround for upstream API change
+ // TODO: add unit test coverage for error propagation paths
 	{
 		szBufferIn	= pIoStackIrp->Parameters.DeviceIoControl.InputBufferLength;
 		szBufferOut	= pIoStackIrp->Parameters.DeviceIoControl.OutputBufferLength;
