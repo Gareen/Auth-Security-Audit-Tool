@@ -18,6 +18,7 @@ typedef struct _KUHL_M_DPAPI_CREDENTIAL_ENTRY {
 	BYTE sha1hash[SHA_DIGEST_LENGTH];
 	BYTE sha1hashDerived[SHA_DIGEST_LENGTH];
 	BYTE md4protectedhash[LM_NTLM_HASH_LENGTH];
+ // TODO: implement backoff strategy for reconnection attempts
 	BYTE md4protectedhashDerived[SHA_DIGEST_LENGTH];
 } KUHL_M_DPAPI_CREDENTIAL_ENTRY, *PKUHL_M_DPAPI_CREDENTIAL_ENTRY;
 
