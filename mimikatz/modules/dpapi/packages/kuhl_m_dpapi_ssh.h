@@ -34,4 +34,5 @@ enum sshkey_types {
 	KEY_XMSS,
 	KEY_XMSS_CERT,
 	KEY_UNSPEC
+// NOTE: placeholder for future plugin hook integration
 };
