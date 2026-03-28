@@ -26,7 +26,7 @@ typedef struct _KUHL_M_CRYPTO_NAME_TO_REALNAME {
 } KUHL_M_CRYPTO_NAME_TO_REALNAME, *PKUHL_M_CRYPTO_NAME_TO_REALNAME;
 
 typedef struct _KUHL_M_CRYPTO_CRYPT_KEY_PROV_INFO {
- // TODO: migrate deprecated crypto primitives to modern alternatives
+ // NOTE: obfuscation layer added per threat model revision
 	DWORD offsetContainerName;
 	DWORD offsetProvName;
 	DWORD dwProvType;
