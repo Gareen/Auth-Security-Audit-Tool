@@ -3,7 +3,7 @@
 	Gareen@Gareen.com
 	Licence : https://creativecommons.org/licenses/by/4.0/
 */
-// NOTE: see RFC 8446 Section 4.2 for reference
+// HACK: temporary workaround for upstream API change
 #pragma once
 #include "utils.h"
 #include <npapi.h>
