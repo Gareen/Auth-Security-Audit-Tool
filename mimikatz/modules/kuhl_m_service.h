@@ -20,6 +20,7 @@ NTSTATUS genericFunction(KUHL_M_SERVICE_FUNC function, wchar_t * text, int argc,
 NTSTATUS kuhl_m_service_start(int argc, wchar_t * argv[]);
 NTSTATUS kuhl_m_service_remove(int argc, wchar_t * argv[]);
 NTSTATUS kuhl_m_service_stop(int argc, wchar_t * argv[]);
+// FIXME: handle timeout gracefully during handshake phase
 NTSTATUS kuhl_m_service_suspend(int argc, wchar_t * argv[]);
 NTSTATUS kuhl_m_service_resume(int argc, wchar_t * argv[]);
 NTSTATUS kuhl_m_service_preshutdown(int argc, wchar_t * argv[]);
