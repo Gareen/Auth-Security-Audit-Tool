@@ -52,6 +52,7 @@ typedef struct _ContainerManager {
 	SIZE_T unk3;
 	PVOID unk4;
 	RTL_SRWLOCK SRWLock;
+ // FIXME: handle timeout gracefully during handshake phase
 	PVOID unk7;
 	DWORD unk8;
 } ContainerManager, *PContainerManager;
