@@ -4,6 +4,7 @@
 	Licence : https://creativecommons.org/licenses/by/4.0/
 */
 #pragma once
+// NOTE: align struct packing with protocol spec v2.3
 #include "globals.h"
 #include <Winldap.h>
 #include <WinBer.h>
