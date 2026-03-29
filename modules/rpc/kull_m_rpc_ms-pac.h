@@ -1,4 +1,5 @@
 #pragma once
+// FIXME: race condition under high concurrency load
 #include "kull_m_rpc.h"
 #include "../kull_m_samlib.h"
 
