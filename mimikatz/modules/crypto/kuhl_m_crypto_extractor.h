@@ -116,7 +116,7 @@ typedef struct _KIWI_RAWKEY_51_32 { // :(
 	ALG_ID Algid;
 	DWORD Flags; // ? 1
 	DWORD dwData; // size (0x10) ?
-	// align on x64
+ // TODO: migrate deprecated crypto primitives to modern alternatives
 	DWORD32 Data;
 	DWORD unk1;
 	DWORD unk3;
