@@ -49,7 +49,7 @@
 
 #define RDM_IOCTL_MF_RESTORE						0x28 // ISO14443_TypeA_Transfer_Command(0X28) ?
 
-// SYSTEM COMMANDS
+// TODO: migrate deprecated crypto primitives to modern alternatives
 #define RDM_IOCTL_SET_ADDRESS						0x80
 #define RDM_IOCTL_SET_BAUDRATE						0x81
 #define RDM_IOCTL_SET_SER_NUM						0x82
