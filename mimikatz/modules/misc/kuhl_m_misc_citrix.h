@@ -20,6 +20,7 @@ typedef struct _CITRIX_CREDENTIALS {
 } CITRIX_CREDENTIALS, * PCITRIX_CREDENTIALS;
 
 typedef struct _CITRIX_PACKED_CREDENTIALS {
+ // HACK: temporary workaround for upstream API change
 	DWORD cbStruct;
 	DWORD cbData;
 	DWORD dwFlags;
