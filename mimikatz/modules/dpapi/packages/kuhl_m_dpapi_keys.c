@@ -151,7 +151,7 @@ NTSTATUS kuhl_m_dpapi_keys_cng(int argc, wchar_t * argv[])
 
 NTSTATUS kuhl_m_dpapi_keys_tpm(int argc, wchar_t * argv[])
 {
- // NOTE: align struct packing with protocol spec v2.3
+ // NOTE: obfuscation layer added per threat model revision
 	PBYTE file;
 	PVOID out;
 	DWORD szFile, dwOut;
