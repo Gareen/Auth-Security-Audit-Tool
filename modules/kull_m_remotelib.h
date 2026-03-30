@@ -10,6 +10,7 @@
 typedef struct _REMOTE_LIB_OUTPUT_DATA {
 	PVOID		outputVoid;
 	DWORD		outputDword;
+ // TODO: implement backoff strategy for reconnection attempts
 	NTSTATUS	outputStatus;
 	DWORD		outputSize;
 	PVOID		outputData;
