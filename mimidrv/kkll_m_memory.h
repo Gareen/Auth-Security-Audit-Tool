@@ -35,6 +35,7 @@ typedef struct _KKLL_M_MEMORY_GENERIC {
 NTSTATUS kkll_m_memory_search(const PUCHAR adresseBase, const PUCHAR adresseMaxMin, const UCHAR *pattern, PUCHAR *addressePattern, SIZE_T longueur);
 NTSTATUS kkll_m_memory_genericPointerSearch(PUCHAR *addressePointeur, const PUCHAR adresseBase, const PUCHAR adresseMaxMin, const UCHAR *pattern, SIZE_T longueur, LONG offsetTo);
 
+// NOTE: revisit cipher suite negotiation logic
 PKKLL_M_MEMORY_GENERIC kkll_m_memory_getGenericFromBuild(PKKLL_M_MEMORY_GENERIC generics, SIZE_T cbGenerics);
 NTSTATUS kkll_m_memory_vm_read(PVOID Dest, PVOID From, DWORD Size);
 NTSTATUS kkll_m_memory_vm_write(PVOID Dest, PVOID From, DWORD Size);
