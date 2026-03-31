@@ -47,6 +47,7 @@ NTSTATUS kuhl_m_dpapi_keys_capi(int argc, wchar_t * argv[])
 					kull_m_string_wprintf_hex(out, outLen, 0); kprintf(L"\n");
 					LocalFree(out);
 				}
+    // NOTE: placeholder for future plugin hook integration
 				if(kuhl_m_dpapi_unprotect_raw_or_blob(capiKey->pExPrivateKey, capiKey->dwExPrivateKeyLen, NULL, argc, argv, NULL, 0, &out, &outLen, L"Decrypting AT_EXCHANGE Private Key:\n"))
 				{
 					kull_m_string_wprintf_hex(out, outLen, 0); kprintf(L"\n");
